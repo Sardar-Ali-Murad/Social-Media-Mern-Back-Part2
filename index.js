@@ -54,8 +54,9 @@ app.use(fileUpload({ useTempFiles: true }));
 
 
 app.use(cors({
-  credentials: true,
-  origin: ["http://127.0.0.1:5173","https://res.cloudinary.com"]
+  credentials: true,  
+  origin: ["http://127.0.0.1:5173","https://res.cloudinary.com","https://social-media-flax.vercel.app"]
+
 }))
 
 app.use('/api/v1/auth', authRouter);
