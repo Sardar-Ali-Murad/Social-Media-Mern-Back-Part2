@@ -24,8 +24,7 @@ export const updatePost=async (req,res)=>{
     if(!postPresent){
         throw new BadRequestError("The Post is not present")
     }
-
-
+    
     let alreadyLiked=postPresent.likes.includes(req.user.userId)
 
     if(alreadyLiked){
